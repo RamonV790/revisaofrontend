@@ -10,8 +10,9 @@ var button = document.querySelector("button");
 
 button.onclick = function () {
   var nome = prompt("Qual é o comando para iniciar o git?");
-  if ((nome = "git init")) {
-    alert("O" + nome + ", serve para iniciar o git.Parabéns você acertou!");
-  }
+  if ((nome == "git init")) {
+    alert("O" + nome + ", serve para iniciar o git.Parabéns você acertou!");}
+    else  {
+      alert("O" + "GIT Init" + ", serve para iniciar o git. Você Errou!");}
   window.location="aula2.html";
-};
+}
