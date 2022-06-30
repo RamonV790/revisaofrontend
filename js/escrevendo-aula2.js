@@ -11,8 +11,9 @@ var button = document.querySelector("button");
 button.onclick = function () {
   var nome = prompt("Qual é o comando para mostrar o estado no git bash");
   if ((nome == "git status")) {
-    alert("O" + nome + ", serve para iniciar o git.Parabéns você acertou!");}
+    alert("O " + nome + ", serve para mostrar o estado do git Bash. Parabéns você acertou!");
+    window.location="aula3.html";}
     else  {
-      alert("O" + nome + ", serve para iniciar o git. Você Errou!");}
-  window.location="aula3.html";
+      alert("O" + nome + ", serve para mostrar o estado do git Bash. Você Errou!");}
+ 
 }

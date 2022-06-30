@@ -4,15 +4,39 @@
   do computador.
   Vamos declarar variáveis no JavaScript?
 
-*/
+  */
 
-var button = document.querySelector("button");
+ // for (ct = 0; ct < 5; ct++) {
+  var button = document.querySelector("button");
+  var ct = 0;
+ 
+ 
+  //alert(ct + "sesds");
+  button.onclick = function () {
+    var nome = prompt("Qual é o comando para iniciar o git?");
 
-button.onclick = function () {
-  var nome = prompt("Qual é o comando para iniciar o git?");
-  if ((nome == "git init")) {
-    alert("O" + nome + ", serve para iniciar o git.Parabéns você acertou!");}
-    else  {
-      alert("O" + "GIT Init" + ", serve para iniciar o git. Você Errou!");}
-  window.location="aula2.html";
-}
+    if ((nome == "git init")) {
+      alert("O " + nome + ", serve para iniciar o git. Parabéns você acertou!");
+      window.location = "aula2.html";
+    }
+  
+   else {
+    ct ++;
+      alert("O" + " GIT Init" + ", serve para iniciar o git. Você Errou!");
+     
+
+    if (ct==3){
+      alert("Que pena você perdeu!");
+      window.location = "aula1.html";
+    }
+    else {
+      alert("Você errou, tem mais "+(3-ct)+" Chances");
+     }
+    
+    }
+    
+
+    }
+  
+
+
