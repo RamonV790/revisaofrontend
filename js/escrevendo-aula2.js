@@ -7,13 +7,34 @@
 */
 
 var button = document.querySelector("button");
+var ct =0;
+
+
 
 button.onclick = function () {
   var nome = prompt("Qual é o comando para mostrar o estado no git bash");
   if ((nome == "git status")) {
-    alert("O " + nome + ", serve para mostrar o estado do git Bash. Parabéns você acertou!");
+    alert("O comando git status exibe as condições do diretório de trabalho e da área de staging. Ele permite que você veja quais alterações foram despreparadas, quais não foram e quais arquivos não estão sendo monitorados pelo Git. Parabéns você acertou!");
     window.location="aula3.html";}
     else  {
-      alert("O" + nome + ", serve para mostrar o estado do git Bash. Você Errou!");}
- 
+      ct ++;
+      alert("O" + nome + ", serve para mostrar o estado do git Bash. Você Errou!");
+    
+      if (ct==3){
+        alert("Que pena você perdeu!");
+        window.location = "aula1.html";
+      }
+      else {
+        alert("Você errou, tem mais "+(3-ct)+" Chances");
+       }
+      
+    
+    
+    
+    
+    }
+      
+
+
+
 }
