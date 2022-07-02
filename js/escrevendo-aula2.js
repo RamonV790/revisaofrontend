@@ -18,7 +18,7 @@ button.onclick = function () {
     window.location="aula3.html";}
     else  {
       ct ++;
-      alert("O" + nome + ", serve para mostrar o estado do git Bash. Você Errou!");
+      alert("Você errou, vamos lá tente novamente!");
     
       if (ct==3){
         alert("Que pena você perdeu!");

@@ -17,7 +17,7 @@ button.onclick = function () {
     window.location="aula5.html";}
     else  {
       ct ++;
-      alert("O" + nome + ", serve para criar um diretório no git Bash. Você Errou!");
+      alert("Você errou, vamos lá tente novamente!");
     
       if (ct==3){
         alert("Que pena você perdeu!");

@@ -18,7 +18,7 @@ button.onclick = function () {
     window.location="aula7.html";}
     else  {
       ct ++;
-      alert(" Você Errou!");
+      alert("Você errou, vamos lá tente novamente!");
     
       if (ct==3){
         alert("Que pena você perdeu!");

@@ -18,7 +18,7 @@ button.onclick = function () {
     window.location="aula6.html";}
     else  {
       ct ++;
-      alert("O "+nome +" serve para baixar o um repositório remoto. Você Errou!");
+      alert("Você errou, vamos lá tente novamente!");
     
       if (ct==3){
         alert("Que pena você perdeu!");
